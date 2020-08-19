@@ -1,0 +1,63 @@
+                            MDCard:
+                                md_bg_color: self.theme_cls.primary_dark
+                                orientation: "vertical"
+                                padding: "8dp"
+                                spacing: 10
+                                size_hint: None, None
+                                size: "160dp", "150dp"
+                                MDLabel:
+                                    id:
+                                    theme_text_color: "Primary"
+                                    size_hint_y: None
+                                    height: self.texture_size[1]
+                                    font_size: "18sp"
+                                    padding_x: 10
+                                MDSeparator:
+                                    height: "2dp"
+                                MDGridLayout:
+                                    cols: 2
+                                    spacing: 10
+                                    MDLabel:
+                                        text: "Activity:"
+                                        halign: "center"
+                                        valign: "middle"
+                                        theme_text_color: "Primary"
+                                        font_size: "12sp"
+                                    MDLabel:
+                                        id:
+                                        halign: "center"
+                                        valign: "middle"
+                                        theme_text_color: "Primary"
+                                        font_size: "12sp"
+                                    MDLabel:
+                                        text: "Setting:"
+                                        halign: "center"
+                                        valign: "middle"
+                                        theme_text_color: "Primary"
+                                        font_size: "12sp"
+                                    MDLabel:
+                                        id:
+                                        halign: "center"
+                                        valign: "middle"
+                                        theme_text_color: "Primary"
+                                        font_size: "12sp"
+                                    MDLabel:
+                                        text: "Temp:"
+                                        halign: "center"
+                                        valign: "middle"
+                                        theme_text_color: "Secondary"
+                                        font_size: "12sp"
+                                    MDLabel:
+                                        id:
+                                        halign: "center"
+                                        valign: "middle"
+                                        theme_text_color: "Secondary"
+                                        font_size: "12sp"
+                                MDGridLayout:
+                                    cols: 3
+                                    MDIconButton:
+                                        icon: "power"
+                                    MDIconButton:
+                                        icon: "fire"
+                                    MDIconButton:
+                                        icon: "snowflake"
