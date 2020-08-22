@@ -328,7 +328,18 @@ class MainApp(MDApp):
 
     def build(self):
         self.root = Builder.load_file("combined.kv")
+        joystick = self.root.ids.apanel.ids.directionjoystick
+        joystick.bind(pad=self.joystick_direction)
         return 0
+
+    # You can use any data from here to make a control function.
+    def joystick_direction(self, instance, pad):
+        x, y = pad
+        x, y = (str(x)[0:5], str(y)[0:5])
+        x, y = (('x: ' + x), ('\ny: ' + y))
+        r = "radians: " + str(instance.radians)[0:5]
+        m = "\nmagnitude: " + str(instance.magnitude)[0:5]
+        a = "\nangle: " + str(instance.angle)[0:5]
 
     def go_back(self):
         self.root.current = "adminPanel"
